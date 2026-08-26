@@ -1,9 +1,10 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>비/흐린 날 맞춤 당일치기 데이트 코스 💌</title>
+    <title>국내 당일치기 데이트 코스 💌</title>
+
     <style>
         :root {
             --bg-color: #f8f9fa;
@@ -14,8 +15,13 @@
             --text-sub: #666666;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, "Helvetica Neue", Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
             margin: 0;
@@ -51,12 +57,22 @@
             padding: 20px;
             margin-bottom: 25px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .place-image {
+            width: calc(100% + 40px);
+            height: 220px;
+            object-fit: cover;
+            margin: -20px -20px 18px;
+            display: block;
         }
 
         .card-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 10px;
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 12px;
             margin-bottom: 15px;
@@ -75,6 +91,13 @@
             border-radius: 20px;
             font-size: 0.8rem;
             font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+            margin-bottom: 15px;
         }
 
         .info-grid {
@@ -96,7 +119,6 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            position: relative;
         }
 
         .timeline li {
@@ -122,6 +144,18 @@
             margin-right: 5px;
         }
 
+        .highlight {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 10px;
+            background: #fff5f1;
+            font-size: 0.85rem;
+        }
+
+        .highlight strong {
+            color: var(--accent);
+        }
+
         footer {
             text-align: center;
             color: var(--text-sub);
@@ -131,74 +165,365 @@
         }
     </style>
 </head>
+
 <body>
 
 <div class="container">
+
     <header>
-        <h1>🌧️ 흐린 날 당일치기 데이트 🚘</h1>
-        <p>천안 출발 | 낮~초저녁 | 쇼핑 & 먹거리 & 놀거리 코스</p>
+        <h1>💌 국내 당일치기 데이트 🚘</h1>
+        <p>천안 출발 | 풍경 + 먹거리 + 볼거리 + 쇼핑 + 카페</p>
     </header>
 
-    <!-- 코스 1 -->
+
+    <!-- 1. 수원 -->
     <div class="card">
+
+        <img
+            class="place-image"
+            src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&w=900&q=80"
+            alt="수원 데이트">
+
         <div class="card-header">
-            <span class="card-title">1. 수원 행리단길 & 화성행궁</span>
+            <span class="card-title">1. 수원 행궁동 & 화성</span>
             <span class="badge">쇼핑 + 감성</span>
         </div>
+
+        <p class="description">
+            행궁동 맛집부터 소품샵, 카페, 수원화성까지
+            먹고 구경하고 사진 찍기 좋은 정석적인 데이트 코스.
+        </p>
+
         <div class="info-grid">
             <div class="info-item"><strong>🚗 편도:</strong> 약 1시간 10분</div>
-            <div class="info-item"><strong>🅿️ 주차:</strong> 화성행궁/팔달구청</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 행궁동 공영주차장</div>
+            <div class="info-item"><strong>📸 볼거리:</strong> 수원화성</div>
+            <div class="info-item"><strong>🍗 먹거리:</strong> 통닭거리</div>
         </div>
+
         <ul class="timeline">
-            <li><span class="time">11:30</span> 천안 출발 - 수원 행궁동 도착</li>
-            <li><span class="time">12:40</span> 행리단길 퓨전 맛집 점심 식사</li>
-            <li><span class="time">13:40</span> 소품샵, 빈티지 옷가게, 플리마켓 쇼핑 & 카페</li>
-            <li><span class="time">16:00</span> 화성행궁 성곽길 산책 & 통닭거리 먹방</li>
-            <li><span class="time">18:00</span> 천안 복귀 출발</li>
+            <li><span class="time">11:30</span> 천안 출발 → 수원 행궁동</li>
+            <li><span class="time">12:40</span> 행궁동 맛집 점심</li>
+            <li><span class="time">14:00</span> 소품샵 & 빈티지샵 구경</li>
+            <li><span class="time">15:30</span> 행궁동 감성 카페</li>
+            <li><span class="time">16:30</span> 화성행궁 & 수원화성 산책</li>
+            <li><span class="time">18:00</span> 통닭거리 저녁</li>
+            <li><span class="time">19:00</span> 천안 복귀</li>
         </ul>
+
+        <div class="highlight">
+            <strong>💛 추천 포인트</strong><br>
+            먹고 놀고 사진 찍는 데이트를 한 번에 하고 싶을 때 추천!
+        </div>
     </div>
 
-    <!-- 코스 2 -->
+
+    <!-- 2. 전주 -->
     <div class="card">
+
+        <img
+            class="place-image"
+            src="https://images.unsplash.com/photo-1538485399081-7c8971a1e7f6?auto=format&fit=crop&w=900&q=80"
+            alt="전주 한옥마을">
+
         <div class="card-header">
-            <span class="card-title">2. 전주 한옥마을 & 청년몰</span>
-            <span class="badge">먹거리 + 아기자기</span>
+            <span class="card-title">2. 전주 한옥마을 & 객리단길</span>
+            <span class="badge">먹거리 + 감성</span>
         </div>
+
+        <p class="description">
+            한옥 골목을 돌아다니며 길거리 음식을 먹고
+            공방과 소품샵, 카페까지 즐기는 먹방형 데이트.
+        </p>
+
         <div class="info-grid">
             <div class="info-item"><strong>🚗 편도:</strong> 약 1시간 40분</div>
-            <div class="info-item"><strong>🅿️ 주차:</strong> 한옥마을/남부시장</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 한옥마을 주변</div>
+            <div class="info-item"><strong>🏠 볼거리:</strong> 한옥마을</div>
+            <div class="info-item"><strong>🍢 먹거리:</strong> 길거리 음식</div>
         </div>
+
         <ul class="timeline">
-            <li><span class="time">11:00</span> 천안 출발 - 전주 한옥마을 도착</li>
-            <li><span class="time">12:40</span> 길거리 음식 투어 & 수제 공방/소품샵 구경</li>
-            <li><span class="time">14:30</span> 남부시장 2층 청년몰 (레트로 굿즈, 보드게임)</li>
-            <li><span class="time">16:00</span> 객리단길 이동 후 옷가게 쇼핑 & 예쁜 카페</li>
-            <li><span class="time">18:00</span> 천안 복귀 출발</li>
+            <li><span class="time">10:30</span> 천안 출발 → 전주</li>
+            <li><span class="time">12:10</span> 한옥마을 도착</li>
+            <li><span class="time">12:30</span> 전주비빔밥 / 국밥</li>
+            <li><span class="time">14:00</span> 길거리 음식 투어</li>
+            <li><span class="time">15:00</span> 경기전 & 한옥 골목</li>
+            <li><span class="time">16:30</span> 객리단길 이동</li>
+            <li><span class="time">17:00</span> 카페 & 소품샵</li>
+            <li><span class="time">18:30</span> 천안 복귀</li>
         </ul>
+
+        <div class="highlight">
+            <strong>🍡 추천 포인트</strong><br>
+            먹는 거 좋아하는 커플에게 특히 추천하는 코스.
+        </div>
     </div>
 
-    <!-- 코스 3 -->
+
+    <!-- 3. 성수 -->
     <div class="card">
+
+        <img
+            class="place-image"
+            src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=80"
+            alt="서울 데이트">
+
         <div class="card-header">
-            <span class="card-title">3. 서울 성수동 팝업 & 서울숲</span>
+            <span class="card-title">3. 서울 성수동 & 서울숲</span>
             <span class="badge">트렌디 + 핫플</span>
         </div>
+
+        <p class="description">
+            팝업스토어와 편집숍을 구경하고 맛집과 카페를 즐긴 뒤
+            서울숲에서 산책하는 트렌디한 데이트.
+        </p>
+
         <div class="info-grid">
             <div class="info-item"><strong>🚗 편도:</strong> 약 1시간 30분</div>
-            <div class="info-item"><strong>🅿️ 주차:</strong> 성수동2가 공영주차장</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 성수동 공영주차장</div>
+            <div class="info-item"><strong>🛍️ 볼거리:</strong> 팝업스토어</div>
+            <div class="info-item"><strong>☕ 포인트:</strong> 카페거리</div>
         </div>
+
         <ul class="timeline">
-            <li><span class="time">11:00</span> 천안 출발 - 서울 성수동 도착</li>
-            <li><span class="time">12:30</span> 성수동 핫플 맛집 (수제버거 등) 점심</li>
-            <li><span class="time">13:30</span> 브랜드 팝업스토어, 대형 편집숍, 디저트 카페</li>
-            <li><span class="time">16:30</span> 서울숲 입구 상점가 구경 & 산책</li>
-            <li><span class="time">18:00</span> 천안 복귀 출발</li>
+            <li><span class="time">10:30</span> 천안 출발 → 성수동</li>
+            <li><span class="time">12:00</span> 성수동 도착</li>
+            <li><span class="time">12:30</span> 성수동 맛집 점심</li>
+            <li><span class="time">14:00</span> 팝업 & 편집숍 구경</li>
+            <li><span class="time">15:30</span> 대형 카페 & 디저트</li>
+            <li><span class="time">16:30</span> 서울숲 산책</li>
+            <li><span class="time">17:30</span> 성수동 저녁</li>
+            <li><span class="time">19:00</span> 천안 복귀</li>
         </ul>
+
+        <div class="highlight">
+            <strong>📸 추천 포인트</strong><br>
+            사진 찍고 쇼핑하고 요즘 핫한 곳 돌아다니는 걸 좋아한다면 추천!
+        </div>
     </div>
 
+
+    <!-- 4. 공주 -->
+    <div class="card">
+
+        <img
+            class="place-image"
+            src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=900&q=80"
+            alt="공주 풍경">
+
+        <div class="card-header">
+            <span class="card-title">4. 공주 공산성 & 제민천</span>
+            <span class="badge">풍경 + 산책</span>
+        </div>
+
+        <p class="description">
+            공산성 성곽을 따라 걸으며 풍경을 보고
+            제민천과 감성 카페까지 이어지는 여유로운 데이트.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item"><strong>🚗 편도:</strong> 약 50분</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 공산성 주차장</div>
+            <div class="info-item"><strong>📸 볼거리:</strong> 공산성</div>
+            <div class="info-item"><strong>🍜 먹거리:</strong> 공주국밥</div>
+        </div>
+
+        <ul class="timeline">
+            <li><span class="time">11:00</span> 천안 출발 → 공주</li>
+            <li><span class="time">12:00</span> 공산성 도착</li>
+            <li><span class="time">12:00</span> 성곽 산책 & 전망 감상</li>
+            <li><span class="time">13:30</span> 공주국밥 / 칼국수</li>
+            <li><span class="time">15:00</span> 제민천 산책</li>
+            <li><span class="time">16:00</span> 감성 카페</li>
+            <li><span class="time">17:30</span> 천안 복귀</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>🌿 추천 포인트</strong><br>
+            북적이는 곳보다 둘이 천천히 걷고 이야기하는 데이트에 추천.
+        </div>
+    </div>
+
+
+    <!-- 5. 예산 -->
+    <div class="card">
+
+        <img
+            class="place-image"
+            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
+            alt="예당호 풍경">
+
+        <div class="card-header">
+            <span class="card-title">5. 예산 예당호 & 예산시장</span>
+            <span class="badge">드라이브 + 먹방</span>
+        </div>
+
+        <p class="description">
+            예산시장에서 맛있는 음식을 먹고 예당호로 이동해
+            호수 풍경과 산책을 즐기는 부담 없는 당일치기 코스.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item"><strong>🚗 편도:</strong> 약 50분~1시간</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 관광지 주차장</div>
+            <div class="info-item"><strong>🌊 볼거리:</strong> 예당호</div>
+            <div class="info-item"><strong>🍴 먹거리:</strong> 예산시장</div>
+        </div>
+
+        <ul class="timeline">
+            <li><span class="time">11:00</span> 천안 출발 → 예산</li>
+            <li><span class="time">12:00</span> 예산시장 도착</li>
+            <li><span class="time">12:00</span> 시장 먹거리 투어</li>
+            <li><span class="time">13:30</span> 예당호 이동</li>
+            <li><span class="time">14:00</span> 예당호 출렁다리 & 호수 구경</li>
+            <li><span class="time">16:00</span> 호수 주변 카페</li>
+            <li><span class="time">17:00</span> 드라이브 & 주변 구경</li>
+            <li><span class="time">18:00</span> 천안 복귀</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>🚗 추천 포인트</strong><br>
+            많이 걷는 데이트보다 드라이브하면서 먹고 구경하는 걸 좋아한다면 추천.
+        </div>
+    </div>
+
+
+    <!-- 6. 군산 -->
+    <div class="card">
+
+        <img
+            class="place-image"
+            src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=80"
+            alt="군산 여행">
+
+        <div class="card-header">
+            <span class="card-title">6. 군산 근대거리 & 철길마을</span>
+            <span class="badge">레트로 + 먹방</span>
+        </div>
+
+        <p class="description">
+            근대문화거리와 철길마을을 돌아보며 옛날 감성을 느끼고
+            군산 짬뽕과 빵까지 즐기는 색다른 데이트.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item"><strong>🚗 편도:</strong> 약 1시간 40분</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 관광지 주변</div>
+            <div class="info-item"><strong>📸 볼거리:</strong> 철길마을</div>
+            <div class="info-item"><strong>🍜 먹거리:</strong> 군산 짬뽕</div>
+        </div>
+
+        <ul class="timeline">
+            <li><span class="time">10:30</span> 천안 출발 → 군산</li>
+            <li><span class="time">12:10</span> 군산 근대역사거리</li>
+            <li><span class="time">12:30</span> 군산 짬뽕 점심</li>
+            <li><span class="time">14:00</span> 근대문화거리 구경</li>
+            <li><span class="time">15:00</span> 경암동 철길마을</li>
+            <li><span class="time">16:00</span> 레트로 골목 & 사진</li>
+            <li><span class="time">17:00</span> 빵집 & 카페</li>
+            <li><span class="time">18:00</span> 천안 복귀</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>📷 추천 포인트</strong><br>
+            평범한 카페 데이트 말고 레트로 감성의 사진을 남기고 싶을 때 추천.
+        </div>
+    </div>
+
+
+    <!-- 7. 인천 -->
+    <div class="card">
+
+        <img
+            class="place-image"
+            src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&w=900&q=80"
+            alt="인천 바다">
+
+        <div class="card-header">
+            <span class="card-title">7. 인천 차이나타운 & 월미도</span>
+            <span class="badge">먹방 + 바다</span>
+        </div>
+
+        <p class="description">
+            차이나타운에서 맛있는 음식을 먹고 개항로를 구경한 뒤
+            월미도에서 바다를 보는 관광형 데이트.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item"><strong>🚗 편도:</strong> 약 1시간 40분~2시간</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 차이나타운 주변</div>
+            <div class="info-item"><strong>🌊 볼거리:</strong> 월미도</div>
+            <div class="info-item"><strong>🥟 먹거리:</strong> 중식 + 시장</div>
+        </div>
+
+        <ul class="timeline">
+            <li><span class="time">10:30</span> 천안 출발 → 인천</li>
+            <li><span class="time">12:00</span> 차이나타운 도착</li>
+            <li><span class="time">12:30</span> 짜장면 / 만두 점심</li>
+            <li><span class="time">14:00</span> 개항로 & 신포시장 구경</li>
+            <li><span class="time">15:30</span> 월미도 이동</li>
+            <li><span class="time">16:00</span> 바다 산책 & 사진</li>
+            <li><span class="time">17:00</span> 카페</li>
+            <li><span class="time">18:30</span> 천안 복귀</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>🌊 추천 포인트</strong><br>
+            먹거리도 많고 바다까지 볼 수 있어서 여행 온 느낌을 내기 좋음.
+        </div>
+    </div>
+
+
+    <!-- 8. 강릉 -->
+    <div class="card">
+
+        <img
+            class="place-image"
+            src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=80"
+            alt="강릉 바다">
+
+        <div class="card-header">
+            <span class="card-title">8. 강릉 중앙시장 & 안목해변</span>
+            <span class="badge">바다 + 여행</span>
+        </div>
+
+        <p class="description">
+            중앙시장에서 강릉 먹거리를 즐기고 안목해변으로 이동해
+            바다를 보며 카페 데이트를 하는 여행 느낌 강한 코스.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item"><strong>🚗 편도:</strong> 약 2시간 30분</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 관광지 주차장</div>
+            <div class="info-item"><strong>🌊 볼거리:</strong> 안목해변</div>
+            <div class="info-item"><strong>🍴 먹거리:</strong> 중앙시장</div>
+        </div>
+
+        <ul class="timeline">
+            <li><span class="time">08:00</span> 천안 출발 → 강릉</li>
+            <li><span class="time">10:30</span> 강릉 도착</li>
+            <li><span class="time">11:00</span> 중앙시장 구경 & 먹거리</li>
+            <li><span class="time">13:00</span> 강릉 맛집 점심</li>
+            <li><span class="time">14:30</span> 안목해변 이동</li>
+            <li><span class="time">15:00</span> 바다 산책 & 사진</li>
+            <li><span class="time">16:00</span> 오션뷰 카페</li>
+            <li><span class="time">17:30</span> 강릉 출발</li>
+            <li><span class="time">20:00</span> 천안 도착</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>🌊 추천 포인트</strong><br>
+            운전은 좀 힘들지만 당일치기로 가장 여행 온 느낌을 내기 좋은 코스.
+        </div>
+    </div>
+
+
     <footer>
-        <p>어디가 제일 마음에 들어? 골라봐!💛</p>
+        <p>어디가 제일 마음에 들어? 💛</p>
+   
     </footer>
+
 </div>
 
 </body>
