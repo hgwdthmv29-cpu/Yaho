@@ -1,0 +1,205 @@
+<! DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비/흐린 날 맞춤 당일치기 데이트 코스 💌</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --primary: #4a6fa5;
+            --accent: #ff7b54;
+            --text-main: #333333;
+            --text-sub: #666666;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px 15px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 30px;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+            margin: 0;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #222;
+        }
+
+        .badge {
+            background-color: #e8f0fe;
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            background: #f1f5f9;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        .info-item strong {
+            color: var(--primary);
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .timeline li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .timeline li::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 5px;
+            top: -2px;
+        }
+
+        .time {
+            font-weight: bold;
+            color: var(--accent);
+            margin-right: 5px;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-sub);
+            font-size: 0.85rem;
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🌧️ 흐린 날 당일치기 데이트 🚘</h1>
+        <p>천안 출발 | 낮~초저녁 | 쇼핑 & 먹거리 & 놀거리 코스</p>
+    </header>
+
+    <!-- 코스 1 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">1. 수원 행리단길 & 화성행궁</span>
+            <span class="badge">쇼핑 + 감성</span>
+        </div>
+        <div class="info-grid">
+            <div class="info-item"><strong>🚗 편도:</strong> 약 1시간 10분</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 화성행궁/팔달구청</div>
+        </div>
+        <ul class="timeline">
+            <li><span class="time">11:30</span> 천안 출발 $\rightarrow$ 수원 행궁동 도착</li>
+            <li><span class="time">12:40</span> 행리단길 퓨전 맛집 점심 식사</li>
+            <li><span class="time">13:40</span> 소품샵, 빈티지 옷가게, 플리마켓 쇼핑 & 카페</li>
+            <li><span class="time">16:00</span> 화성행궁 성곽길 산책 & 통닭거리 먹방</li>
+            <li><span class="time">18:00</span> 천안 복귀 출발</li>
+        </ul>
+    </div>
+
+    <!-- 코스 2 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">2. 전주 한옥마을 & 청년몰</span>
+            <span class="badge">먹거리 + 아기자기</span>
+        </div>
+        <div class="info-grid">
+            <div class="info-item"><strong>🚗 편도:</strong> 약 1시간 40분</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 한옥마을/남부시장</div>
+        </div>
+        <ul class="timeline">
+            <li><span class="time">11:00</span> 천안 출발 $\rightarrow$ 전주 한옥마을 도착</li>
+            <li><span class="time">12:40</span> 길거리 음식 투어 & 수제 공방/소품샵 구경</li>
+            <li><span class="time">14:30</span> 남부시장 2층 청년몰 (레트로 굿즈, 보드게임)</li>
+            <li><span class="time">16:00</span> 객리단길 이동 후 옷가게 쇼핑 & 예쁜 카페</li>
+            <li><span class="time">18:00</span> 천안 복귀 출발</li>
+        </ul>
+    </div>
+
+    <!-- 코스 3 -->
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">3. 서울 성수동 팝업 & 서울숲</span>
+            <span class="badge">트렌디 + 핫플</span>
+        </div>
+        <div class="info-grid">
+            <div class="info-item"><strong>🚗 편도:</strong> 약 1시간 30분</div>
+            <div class="info-item"><strong>🅿️ 주차:</strong> 성수동2가 공영주차장</div>
+        </div>
+        <ul class="timeline">
+            <li><span class="time">11:00</span> 천안 출발 $\rightarrow$ 서울 성수동 도착</li>
+            <li><span class="time">12:30</span> 성수동 핫플 맛집 (수제버거 등) 점심</li>
+            <li><span class="time">13:30</span> 브랜드 팝업스토어, 대형 편집숍, 디저트 카페</li>
+            <li><span class="time">16:30</span> 서울숲 입구 상점가 구경 & 산책</li>
+            <li><span class="time">18:00</span> 천안 복귀 출발</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>어디가 제일 마음에 들어? 골라봐!💛</p>
+    </footer>
+</div>
+
+</body>
+</html>
